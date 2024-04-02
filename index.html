@@ -101,8 +101,8 @@
         <h2 class="mb-5">PhD researcher</h2>
         <p class="mb-3">I am a PhD researcher at <a href="https://www.kuleuven.be/kuleuven" target="_blank">KU
             Leuven</a>, working on
-          uncertainty calibration of deep neural networks in the VISICS lab
-          within <a href="https://www.esat.kuleuven.be/psi" target="_blank">ESAT-PSI</a>, supervised by <a
+          uncertainty calibration of deep neural networks in the 
+           <a href="https://www.esat.kuleuven.be/psi" target="_blank">ESAT-PSI</a> lab, supervised by <a
             href="https://homes.esat.kuleuven.be/~mblaschk/" target="_blank">Prof. Matthew B. Blaschko. </a></p>
         <p class="mb-3">I obtained my Master's degree in Artifical Intelligence at KU Leuven, Belgium. Before that, I worked as a
           Software Engineer at Netcetera,
@@ -166,6 +166,69 @@
             target="_blank">Google Scholar</a>.
         </p>
 
+        <div class="resume-item pb-3">
+          <hr class="mt-3 mb-3" />
+          <div class="d-flex flex-column flex-md-row mb-3">
+            <div class="resume-content mr-auto">
+              <h3 class="text-md-left text-primary">AISTATS 2024</span>
+                <h3 class="mb-1">Consistent and Asymptotically Unbiased Estimation of Proper Calibration Errors</h3>
+                <div class="subheading mb-3">T. Popordanoska*, S.Gruber*, A. Tiulpin, F. Buettner, M. Blaschko</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 how-img">
+              <img src="./img/aistats_fig1.png" loading="lazy" class="img-fluid" alt="ECE-bin vs ECE-kde" />
+            </div>
+            <div class="col-md-8">
+              <p class="text-muted"> Every proper score decomposes into two fundamental components: proper calibration error and refinement, utilizing 
+                a Bregman divergence. We propose a method that allows consistent, and asymptotically unbiased estimation of all proper calibration errors and refinement terms. 
+                In particular, we introduce Kullback-Leibler calibration error, induced by the commonly used cross-entropy loss. 
+                As part of our results, we prove a relation between refinement and f-divergences, which implies information monotonicity in
+                neural networks, regardless of which proper scoring rule is optimized.
+                </p>
+
+              <p><a href="https://arxiv.org/pdf/2312.08589.pdf" target="_blank">Paper</a> &nbsp&nbsp <a
+                  href="https://github.com/tpopordanoska/proper-calibration-error" target="_blank">Code</a>
+                  <!-- &nbsp&nbsp <a
+                  href="https://www.youtube.com/watch?v=UhTWKRFoo6I&ab_channel=ComputerVisionFoundationVideos"
+                  target="_blank">Video</a> &nbsp&nbsp
+                  <a href="https://pbs.twimg.com/media/GDDRMqqbIAAzWTr?format=jpg&name=4096x4096" target="_blank">Poster</a> -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-item pb-3">
+          <hr class="mt-3 mb-3" />
+          <div class="d-flex flex-column flex-md-row mb-3">
+            <div class="resume-content mr-auto">
+              <h3 class="text-md-left text-primary">WACV 2024</span>
+                <h3 class="mb-1">Beyond classification: Definition and density-based estimation of calibration in object detection</h3>
+                <div class="subheading mb-3">T. Popordanoska, A. Tiulpin, M. Blaschko</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 how-img">
+              <img src="./img/wacv_fig1.png" loading="lazy" class="img-fluid" alt="ECE-bin vs ECE-kde" />
+            </div>
+            <div class="col-md-8">
+              <p class="text-muted"> We tackle the challenge of defining
+                and estimating calibration error for object detection.
+                In particular, we adapt the definition of classification calibration error to handle the nuances associated with object
+                detection, and predictions in structured output spaces more generally. Furthermore, we propose a consistent and differentiable 
+                estimator of the detection calibration error, utilizing kernel density estimation. Our experiments demonstrate the effectiveness
+                of our estimator against competing train-time and post-hoc calibration methods, while maintaining similar detection performance.
+                </p>
+
+              <p><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Popordanoska_Beyond_Classification_Definition_and_Density-Based_Estimation_of_Calibration_in_Object_WACV_2024_paper.pdf" target="_blank">Paper</a> &nbsp&nbsp <a
+                  href="https://github.com/tpopordanoska/calibration-object-detection" target="_blank">Code</a> &nbsp&nbsp <a
+                  href="https://www.youtube.com/watch?v=UhTWKRFoo6I&ab_channel=ComputerVisionFoundationVideos"
+                  target="_blank">Video</a> &nbsp&nbsp
+                  <a href="https://pbs.twimg.com/media/GDDRMqqbIAAzWTr?format=jpg&name=4096x4096" target="_blank">Poster</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div class="resume-item pb-3">
           <hr class="mt-3 mb-3" />
@@ -173,7 +236,7 @@
             <div class="resume-content mr-auto">
               <h3 class="text-md-left text-primary">NeurIPS 2022</span>
                 <h3 class="mb-1">A Consistent and Differentiable Lp Canonical Calibration Error Estimator</h3>
-                <div class="subheading mb-3">T. Popordanoska, R. Sayer, M. Blaschko</div>
+                <div class="subheading mb-3">T. Popordanoska*, R. Sayer*, M. Blaschko</div>
             </div>
           </div>
           <div class="row">
@@ -198,7 +261,7 @@
           </div>
         </div>
 
-        <div class="resume-item pb-3">
+        <!-- <div class="resume-item pb-3">
           <hr class="mt-3 mb-3" />
           <div class="d-flex flex-column flex-md-row mb-3">
             <div class="resume-content mr-auto">
@@ -226,7 +289,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="resume-item pb-3">
           <hr class="mt-3 mb-3" />
@@ -255,7 +318,7 @@
           </div>
         </div>
 
-        <div class="resume-item pb-3">
+        <!-- <div class="resume-item pb-3">
           <hr class="mt-3 mb-3" />
           <div class="d-flex flex-column flex-md-row mb-3">
             <div class="resume-content mr-auto">
@@ -290,7 +353,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
       </div>
@@ -300,6 +363,16 @@
 
       <div class="my-auto">
         <h2 class="mb-3">News</h2>
+
+        <p> <span class="text-primary">January 2024: </span> Our paper on estimating proper calibration errors is accepted to <a href="https://arxiv.org/pdf/2312.08589.pdf">AISTATS 2024.</a></p>
+
+       <p> <span class="text-primary">October 2023: </span> I was a student volunteer @ ICCV 2023. </p>
+
+        <p> <span class="text-primary">October 2023: </span> I presented our workshop paper on assessing calibration under covariate shift at the <a href="https://sites.google.com/view/wicviccv2023/program/accepted-papers?authuser=0">WiCV workshop</a> @ ICCV 2023. </p>
+
+        <p> <span class="text-primary">August 2023: </span> Our paper on calibration in object detection is accepted to <a
+          href="https://openaccess.thecvf.com/content/WACV2024/papers/Popordanoska_Beyond_Classification_Definition_and_Density-Based_Estimation_of_Calibration_in_Object_WACV_2024_paper.pdf">WACV 2024.</a> </p>
+
         <p> <span class="text-primary">November 2022: </span> I presented our work on estimating calibration error @ <a
             href="https://neurips.cc/virtual/2022/poster/54014">NeurIPS 2022</a>
           in New Orleans. </p>

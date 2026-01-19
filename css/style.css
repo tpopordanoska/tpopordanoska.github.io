@@ -53,6 +53,7 @@ body {
     line-height: 1.6;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,6 +88,12 @@ img {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
 }
 
 .text-link {
@@ -275,7 +282,6 @@ img {
     font-weight: 700;
     margin-bottom: var(--spacing-md);
     line-height: 1.1;
-    white-space: nowrap;
 }
 
 .hero-text .role {
@@ -626,35 +632,44 @@ img {
 }
 
 /* Responsive adjustments for mobile */
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .news-items-group {
-        padding-left: 30px;
+        padding-left: 0;
+        padding-top: 1rem;
     }
     
     .news-items-group::before {
-        left: 10px;
+        display: none;
     }
     
+    .timeline-news-item {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+    }
+
     .timeline-news-date {
         position: static;
         width: auto;
         text-align: left;
         padding-right: 0;
         margin-bottom: 0.5rem;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--color-accent);
+        white-space: normal;
     }
     
     .timeline-news-marker {
-        left: 4px;
-        top: 8px;
-    }
-    
-    .timeline-news-item {
-        flex-direction: column;
+        display: none;
     }
     
     .timeline-news-content {
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -735,13 +750,28 @@ img {
     }
     
     .hero-content {
-        flex-direction: column-reverse; /* Image top on mobile? No, preserve order or reverse. Standard is text then image, but on mobile image first is often nice. Let's keep normal flow: Text then Image. Ah, wait, column-reverse puts Image on Top locally if I code it right. Let's start with flex-direction column. */
         flex-direction: column;
         text-align: center;
+        gap: var(--spacing-md);
+    }
+
+    .hero-image {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .image-wrapper {
+        width: 250px;
+        height: 250px;
+        max-width: 100%;
     }
 
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        word-wrap: break-word; /* Ensure long names wrap */
     }
 
     .social-links {
@@ -751,6 +781,7 @@ img {
     .bio {
         margin: 0 auto var(--spacing-md) auto;
     }
+
 
     .mobile-menu-toggle {
         display: block;
@@ -791,6 +822,11 @@ img {
         border: none;
     }
 
+    /* Reduce timeline padding on mobile */
+    .timeline-item {
+        padding-left: 2rem;
+    }
+    
     .pub-image img {
         max-height: 250px; /* Limit height on mobile */
         object-fit: contain;
